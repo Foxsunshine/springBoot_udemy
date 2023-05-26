@@ -1,15 +1,14 @@
 package com.luv2code.demo.rest;
 
-public class StudentErrorResponse{
+public class StudentErrorResponse {
 
     private int status;
     private String message;
     private long timeStamp;
 
-    public StudentErrorResponse(){
+    public StudentErrorResponse() {
 
     }
-
 
     public StudentErrorResponse(int status, String message, long timeStamp) {
         this.status = status;
@@ -26,10 +25,10 @@ public class StudentErrorResponse{
     }
 
     public void setTimeStamp(long timeStamp) {
-        tthis.timeStamp = timeStamp;
+        this.timeStamp = timeStamp;
     }
 
-    public int setStatus() {
+    public int getStatus() {
         return status;
     }
 
@@ -37,7 +36,7 @@ public class StudentErrorResponse{
         return message;
     }
 
-    public long timeStamp() {
+    public long getTimeStamp() {
         return timeStamp;
     }
 }
